@@ -1,0 +1,82 @@
+:root {
+--white: hsl(0, 0%, 100%);
+--Slate-300: hsl(212, 45%, 89%);
+--Slate-500: hsl(216, 15%, 48%);
+--Slate-900: hsl(218, 44%, 22%);
+}
+
+
+
+
+body {
+    background-color: hsl(212, 45%, 89%);
+    font-size: 18px;
+    font-family: 'Outfit';
+}
+
+.container {
+    /* height: 100%; */
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+.card {
+    background-color: var(--white);
+    
+    border-radius: 15px;
+    padding: 15px;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    box-shadow: 5px 15px 20px 0px gray;
+    max-width: 300px;
+    
+    place-content: center;
+    margin-top: 10%;
+
+}
+
+.card-qr {
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.card-title {
+    color: var(--Slate-900);
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+.card-description {
+    font-weight: 400;
+    color: var(--Slate-500);
+    margin-bottom: 15px;
+}
+
+.footer {
+    text-align: center;
+    bottom: 3%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 100px;
+}
+
+img {
+    width: 100%;
+    border-radius: 15px;
+}
+/* Phone size */
+@media screen and (max-width: 375px) {
+    /* Styles for screens with a maximum width of 768px */
+    .card {
+        
+        color:red;
+        
+        
+  }
+}
